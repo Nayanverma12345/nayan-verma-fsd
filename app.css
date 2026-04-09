@@ -1,0 +1,46 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth font rendering */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f172a; /* dark fallback */
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Remove default input/button styles */
+input, button {
+  font-family: inherit;
+  outline: none;
+}
+
+/* Remove autofill yellow background (Chrome fix) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,0.2) inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Scrollbar styling (optional modern look) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#6366f1, #ec4899);
+  border-radius: 10px;
+}
+
+/* Center root properly */
+#root {
+  height: 100vh;
+}
